@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">gLockr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="browsing_text">Start \n Browsing</string>
+    <string name="howitworks_text">How it \n works...</string>
+    <string name="signuporsignin_text">Sign up or \n sign in</string>
+    <string name="facebookloin_text">SignUp with Facebook</string>
+    <string name="emailloin_text">Sign up with Email</string>
+    <string name="alreadysignuptext">Already Signed Up? </string>
+    <string name="taptext">Tap Here</string>
+    <string name="back">Back</string>
+    <string name="login">Login</string>
+    <string name="forgotpassword">Forgot Password?</string>
+    <string name="create">Sign Up</string>
+    <string name="secure">We are Secure</string>
+
+</resources>

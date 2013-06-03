@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:background="@drawable/gun1">
+
+   <RelativeLayout       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:layout_gravity="bottom"
+        android:background="@drawable/button"
+        >       
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_weight="1">
+        
+         <Button
+            android:id="@+id/start_browsing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browsing_text"
+            android:background="@drawable/bottombutton_selector" 
+            android:textColor="#ffffff"
+          android:textSize="17dp"
+            
+           />     
+          
+         </LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">     
+        
+      <Button
+            android:id="@+id/how_it_works"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howitworks_text"
+            android:background="@drawable/bottombutton_selector" 
+            android:textColor="#ffffff"                   	
+        	android:textSize="17dp"         
+       		     	
+        	
+        	/> 
+        	</LinearLayout>
+         
+          <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+       
+       
+         <Button
+            android:id="@+id/signup_or_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signuporsignin_text"
+            android:background="@drawable/bottombutton_selector" 
+            android:textColor="#ffffff"
+           android:textSize="17dp"
+            
+             />
+        </LinearLayout>
+        
+          
+    </LinearLayout>     
+    </RelativeLayout>
+	
+</LinearLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F8F8FF" >
+
+    <LinearLayout
+        android:id="@+id/cloudimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"/>
+        </LinearLayout>
+
+        <LinearLayout            
+        	android:layout_width="fill_parent"
+        	android:layout_height="200dp"
+        	android:orientation="vertical"
+        	android:gravity="center_horizontal"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="40dp">
+
+       
+            
+            <Button
+            android:id="@+id/btnfacebooklogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/facebook"
+            android:text="@string/facebookloin_text"
+            android:textStyle="bold"
+      		android:textColor="#ffffff"
+      		android:paddingLeft="25dp"
+      		android:textSize="16dp"/>        
+        
+      
+         
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/or"
+            android:layout_marginTop="10dp"/>
+        
+        <Button
+            android:id="@+id/btnloginwithemailt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text="@string/emailloin_text"
+            android:textStyle="bold" 
+            android:layout_marginTop="10dp"
+            android:background="@drawable/singupwithemail"
+             android:textColor="#ffffff"
+             android:textSize="16dp"/>
+    </LinearLayout>
+
+         
+      <RelativeLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"       
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="35dp">       
+		
+        <TextView
+            android:id="@+id/already"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alreadysignuptext"
+      		android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/taphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taptext" 
+            android:layout_toRightOf="@id/already"
+            android:textColor="#00008B"
+            android:textStyle="bold"
+            android:paddingLeft="7dp"/> 
+        
+       
+    </RelativeLayout>
+	<!-- </RelativeLayout> -->
+</LinearLayout>
