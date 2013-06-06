@@ -203,7 +203,7 @@ public void showSettingsAlert(){
 
 @Override
 public void onLocationChanged(Location location) {
-    Toast.makeText(getApplicationContext(), "Location Changed called", Toast.LENGTH_SHORT).show();
+   // Toast.makeText(getApplicationContext(), "Location Changed called", Toast.LENGTH_SHORT).show();
     latitude =location.getLatitude();
     longitude = location.getLongitude();
 }

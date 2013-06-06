@@ -33,6 +33,8 @@
             android:screenOrientation="portrait"> </activity>
         <activity android:name="HowItWorks"
             android:screenOrientation="portrait"> </activity>
+         <activity android:name="SellScreen"
+            android:screenOrientation="portrait"> </activity>
         
     <service android:name="com.glockr.connection.ServerProxyService"></service>
     <service android:name="com.glockr.utils.GPSTracker" > </service>

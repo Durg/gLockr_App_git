@@ -5,6 +5,11 @@
     android:background="#F8F8FF"
     android:orientation="vertical" >
 
+   <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+       android:layout_weight="1"
+        android:orientation="vertical">
     <TextView
                     android:id="@+id/feedscreen"
                     android:layout_width="wrap_content"
@@ -15,7 +20,146 @@
                     android:textColor="#000000"
                     android:textSize="20dp"
                     android:textStyle="italic" />
+    </LinearLayout> -->
+    
+    
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+       android:layout_weight="1"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/topview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
 
-  
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Button1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Button2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Button2" />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+    
+    
+    </LinearLayout>
+    
+
+  <RelativeLayout       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:layout_gravity="bottom"
+        android:background="#000000"
+       >       
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+       >
+        
+         <Button
+            android:id="@+id/feedbottomfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:background="@drawable/feedselector" 
+            android:gravity="center_vertical"
+           />     
+          
+         </LinearLayout>
+         
+            <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+         android:layout_marginTop="0dp">     
+        
+      <Button
+            android:id="@+id/sellbottomfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:background="@drawable/sellselector"    
+       		     	
+        	
+        	/> 
+        	</LinearLayout>  
+         
+          <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+       
+       
+         <Button
+            android:id="@+id/inboxbottomfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/inboxselector" 
+            
+            
+             /> 
+        </LinearLayout>
+        
+           <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+       
+       
+         <Button
+            android:id="@+id/profilebottomfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/profileselector" 
+            
+            
+             />
+        </LinearLayout>
+        
+          
+    </LinearLayout>     
+    </RelativeLayout>
 
 </LinearLayout>

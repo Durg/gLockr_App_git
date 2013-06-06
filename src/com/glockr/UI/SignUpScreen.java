@@ -143,13 +143,16 @@ public class SignUpScreen extends Activity implements OnClickListener
 			boolean isEmail = emailValidator.validate(mstrEmail);
 			if(isEmail)
 			{
-			Toast.makeText(this, "go for create",Toast.LENGTH_LONG).show();	
+			//Toast.makeText(this, "go for create",Toast.LENGTH_LONG).show();	
 			latitude = gps.getLatitude();
 			longitude = gps.getLongitude();
 			Log.e("-----At SignUpScreen-----","---Onclickmethod----latitude="+latitude+"---longitude="+longitude);
 			
-			signUp();
+		//	signUp();
 			
+			Intent intent = new Intent();
+			intent.setClass(this, FeedScreen.class);
+			startActivity(intent);
 			
 				
 			}
@@ -214,16 +217,9 @@ public class SignUpScreen extends Activity implements OnClickListener
 	        			json.put("customer_fname",mstrFname);
 	        			json.put("customer_lname",mstrLname);
 	        			json.put("latitude",latitude);
-	        			json.put("longitude",longitude);
+	        			json.put("longitude",longitude);	        			
 	        			
-	        			
-	        			
-	        			
-	        			
-	        			String jsonString = json.toString();
-	                    
-	                   
-	                    
+	        			String jsonString = json.toString();	                    
 	        			StringEntity se = new StringEntity( json.toString(),HTTP.UTF_8);  
 	                    se.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
 	                    se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
